@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".NotesActivity"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/logout_notes_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginVertical="10dp"
+        android:drawableLeft="@drawable/ic_logout"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/ubuntu_medium"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_note_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_add"
+        app:maxImageSize="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notes_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/logout_notes_tv">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

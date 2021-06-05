@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/colorPrimary"
+    android:padding="8dp">
+
+    <!--    center line    -->
+    <RelativeLayout
+        android:id="@+id/centerLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerLine2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="31sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Create your new account!"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/signup_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerLine2"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Enter email"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/textHint" />
+
+    <EditText
+        android:id="@+id/signup_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerLine2"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textColorHint="@color/textHint" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/signup_password_et"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#4169E1"/>
+
+    <TextView
+        android:id="@+id/goBackToLogin_signup_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go back to Login"
+        android:layout_marginHorizontal="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:includeFontPadding="false"/>
+
+
+</RelativeLayout>

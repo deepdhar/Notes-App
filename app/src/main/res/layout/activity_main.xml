@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_password_tv"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="18dp"/>
+
+    <!--    center line    -->
+    <RelativeLayout
+        android:id="@+id/centerLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerLine"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Welcome to Notes!"
+            android:textColor="@color/white"
+            android:textSize="31sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Log in to continue"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerLine"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textHint" />
+
+    <EditText
+        android:id="@+id/login_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerLine"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textHint" />
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/email"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_above="@id/centerLine"-->
+    <!--        android:layout_marginHorizontal="18dp"-->
+    <!--        android:layout_marginBottom="10dp">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/login_email_et"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="Enter your email"-->
+    <!--            android:inputType="textEmailAddress"-->
+    <!--            android:textColor="@color/white" />-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/password"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/centerLine"-->
+    <!--        android:layout_marginHorizontal="18dp"-->
+    <!--        android:layout_marginTop="10dp">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/login_password"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:hint="Password"-->
+    <!--            android:inputType="textPassword"-->
+    <!--            android:textColor="@color/white" />-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_password_et"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="30dp"
+        android:includeFontPadding="false"
+        android:text="Log In"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="@color/colorAccent"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/forgot_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Forgot Password?"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#4169E1"
+        android:includeFontPadding="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="New User! Want to Sign In?"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

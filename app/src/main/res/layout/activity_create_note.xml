@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CreateNoteActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_createNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_createNote"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4A4A4A">
+
+        <ImageView
+            android:id="@+id/back_CreateNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_back" />
+
+        <EditText
+            android:id="@+id/create_title_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4A4A4A"
+            android:fontFamily="@font/ubuntu_bold"
+            android:hint="Enter note title here"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/create_content_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_createNote"
+        android:gravity="top|left"
+        android:hint="Enter your note content here.."
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded"
+        android:background="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_note_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="#FFD700"
+        android:src="@drawable/save_black_img"
+        app:maxImageSize="30dp"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>
