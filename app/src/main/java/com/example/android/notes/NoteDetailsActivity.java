@@ -36,8 +36,8 @@ public class NoteDetailsActivity extends AppCompatActivity {
             }
         });
 
-        toolbar = findViewById(R.id.toolbar_noteDetails);
-        setSupportActionBar(toolbar);
+//        toolbar = findViewById(R.id.toolbar_noteDetails);
+//        setSupportActionBar(toolbar);
 
 
         Intent data = getIntent();

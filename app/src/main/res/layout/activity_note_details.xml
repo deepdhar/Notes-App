@@ -20,27 +20,38 @@
             android:src="@drawable/ic_back"
             android:paddingRight="10dp"/>
 
-        <TextView
-            android:id="@+id/title_noteDetails"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#4A4A4A"
-            android:fontFamily="@font/ubuntu_bold"
-            android:text="Title"
-            android:gravity="center_vertical"
-            android:textColor="@color/white"
-            android:textSize="22sp" />
+<!--        <TextView-->
+<!--            android:id="@+id/title_noteDetails"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#4A4A4A"-->
+<!--            android:fontFamily="@font/ubuntu_bold"-->
+<!--            android:text="Title"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="22sp" />-->
 
     </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title_noteDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Title"
+        android:layout_below="@id/toolbar_noteDetails"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/content_noteDetails"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_noteDetails"
+        android:layout_below="@id/title_noteDetails"
         android:gravity="top|left"
         android:text="Your note content here.."
-        android:padding="16dp"
+        android:padding="16.5dp"
         android:textColor="@color/white"
         android:fontFamily="@font/ubuntu_regular"
         android:textSize="16sp"

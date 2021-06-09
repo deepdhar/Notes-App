@@ -59,8 +59,8 @@ public class EditNoteActivity extends AppCompatActivity {
             }
         });
 
-        toolbar = findViewById(R.id.toolbar_editNote);
-        setSupportActionBar(toolbar);
+//        toolbar = findViewById(R.id.toolbar_editNote);
+//        setSupportActionBar(toolbar);
 
         String noteTitle = data.getStringExtra("title");
         String noteContent = data.getStringExtra("content");

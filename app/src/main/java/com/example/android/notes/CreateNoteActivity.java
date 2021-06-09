@@ -58,8 +58,8 @@ public class CreateNoteActivity extends AppCompatActivity {
             }
         });
 
-        toolbar = findViewById(R.id.toolbar_createNote);
-        setSupportActionBar(toolbar);
+//        toolbar = findViewById(R.id.toolbar_createNote);
+//        setSupportActionBar(toolbar);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
