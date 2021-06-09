@@ -27,23 +27,36 @@
             android:paddingRight="10dp"
             android:src="@drawable/ic_back" />
 
-        <EditText
-            android:id="@+id/create_title_note"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#4A4A4A"
-            android:fontFamily="@font/ubuntu_bold"
-            android:hint="Enter note title here"
-            android:textColor="@color/white"
-            android:textSize="19sp" />
+<!--        <EditText-->
+<!--            android:id="@+id/create_title_note"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#4A4A4A"-->
+<!--            android:fontFamily="@font/ubuntu_bold"-->
+<!--            android:hint="Enter note title here"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="19sp" />-->
 
     </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/create_title_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:hint="Enter note title here"
+        android:layout_below="@id/toolbar_createNote"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="20dp"
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/create_content_note"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_createNote"
+        android:layout_below="@id/create_title_note"
         android:gravity="top|left"
         android:hint="Enter your note content here.."
         android:padding="16dp"

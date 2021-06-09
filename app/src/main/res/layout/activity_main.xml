@@ -126,7 +126,7 @@
         android:includeFontPadding="false"
         android:text="Log In"
         android:fontFamily="sans-serif-medium"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="#DCB900"
         android:textAllCaps="false" />
 
     <TextView
