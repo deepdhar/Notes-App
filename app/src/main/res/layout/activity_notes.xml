@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context=".NotesActivity"
-    android:padding="8dp">
+    android:padding="2dp">
 
     <TextView
         android:id="@+id/logout_notes_tv"

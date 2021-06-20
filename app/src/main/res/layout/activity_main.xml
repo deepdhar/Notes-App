@@ -80,54 +80,18 @@
         android:textColor="@color/white"
         android:textColorHint="@color/textHint" />
 
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-    <!--        android:id="@+id/email"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_above="@id/centerLine"-->
-    <!--        android:layout_marginHorizontal="18dp"-->
-    <!--        android:layout_marginBottom="10dp">-->
-
-    <!--        <EditText-->
-    <!--            android:id="@+id/login_email_et"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:hint="Enter your email"-->
-    <!--            android:inputType="textEmailAddress"-->
-    <!--            android:textColor="@color/white" />-->
-
-    <!--    </com.google.android.material.textfield.TextInputLayout>-->
-
-    <!--    <com.google.android.material.textfield.TextInputLayout-->
-    <!--        android:id="@+id/password"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_below="@id/centerLine"-->
-    <!--        android:layout_marginHorizontal="18dp"-->
-    <!--        android:layout_marginTop="10dp">-->
-
-    <!--        <EditText-->
-    <!--            android:id="@+id/login_password"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:hint="Password"-->
-    <!--            android:inputType="textPassword"-->
-    <!--            android:textColor="@color/white" />-->
-
-    <!--    </com.google.android.material.textfield.TextInputLayout>-->
-
     <Button
         android:id="@+id/login_button"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_below="@id/login_password_et"
         android:layout_marginHorizontal="18dp"
         android:layout_marginTop="30dp"
         android:includeFontPadding="false"
-        android:text="Log In"
+        android:hint="Log In"
+        android:textColorHint="@color/white"
         android:fontFamily="sans-serif-medium"
-        android:backgroundTint="#DCB900"
-        android:textAllCaps="false" />
+        android:backgroundTint="#DCB900"/>
 
     <TextView
         android:id="@+id/forgot_password_tv"
@@ -138,20 +102,20 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:text="Forgot Password?"
+        android:text="Forgot Password? Click Here"
         android:textSize="16sp" />
 
     <Button
         android:id="@+id/signup_button"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="18dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#4169E1"
         android:includeFontPadding="false"
         android:fontFamily="sans-serif-medium"
-        android:text="New User! Want to Sign In?"
-        android:textAllCaps="false" />
+        android:hint="New User? Sign Up!"
+        android:textColorHint="@color/white"/>
 
 </RelativeLayout>

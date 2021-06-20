@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
-    android:paddingHorizontal="8dp"
+    android:paddingHorizontal="4dp"
     android:paddingTop="10dp">
 
     <androidx.cardview.widget.CardView
@@ -36,7 +36,7 @@
                     android:paddingVertical="10dp"
                     android:text="This is your note"
                     android:textColor="@color/white"
-                    android:textSize="19sp" />
+                    android:textSize="18sp" />
 
                 <ImageView
                     android:id="@+id/menu_popup_bn"

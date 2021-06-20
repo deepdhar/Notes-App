@@ -75,12 +75,12 @@
     <Button
         android:id="@+id/signup_button"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginHorizontal="18dp"
         android:layout_marginTop="30dp"
         android:layout_below="@id/signup_password_et"
-        android:text="Sign Up"
-        android:textAllCaps="false"
+        android:hint="Create account"
+        android:textColorHint="@color/white"
         android:fontFamily="sans-serif-medium"
         android:backgroundTint="#4169E1"/>
 
