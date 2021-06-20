@@ -53,7 +53,7 @@ public class ForgetPasswordActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()) {
-                                Toast.makeText(ForgetPasswordActivity.this, "Email Sent, chek your inbox", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ForgetPasswordActivity.this, "Email sent! Open link to reset password", Toast.LENGTH_SHORT).show();
                                 finish();
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             } else {

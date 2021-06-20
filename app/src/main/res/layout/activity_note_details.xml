@@ -37,12 +37,13 @@
         android:id="@+id/title_noteDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/ubuntu_bold"
+        android:fontFamily="sans-serif-medium"
         android:text="Title"
         android:layout_below="@id/toolbar_noteDetails"
         android:textColor="@color/white"
-        android:padding="16dp"
-        android:textSize="22sp" />
+        android:paddingTop="20dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="19sp" />
 
     <TextView
         android:id="@+id/content_noteDetails"
@@ -51,9 +52,9 @@
         android:layout_below="@id/title_noteDetails"
         android:gravity="top|left"
         android:text="Your note content here.."
-        android:padding="16.5dp"
+        android:padding="16dp"
         android:textColor="@color/white"
-        android:fontFamily="@font/ubuntu_regular"
+        android:fontFamily="sans-serif"
         android:textSize="16sp"
         tools:ignore="RtlHardcoded"
         android:background="@null" />

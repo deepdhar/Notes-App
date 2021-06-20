@@ -20,15 +20,16 @@
             android:src="@drawable/ic_back"
             android:paddingRight="10dp"/>
 
-<!--        <EditText-->
-<!--            android:id="@+id/edit_title_note"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="#4A4A4A"-->
-<!--            android:fontFamily="@font/ubuntu_bold"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:hint="okok"-->
-<!--            android:textSize="19sp" />-->
+        <TextView
+            android:id="@+id/title_noteDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4A4A4A"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Edit Note"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -37,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:fontFamily="@font/ubuntu_bold"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/white"
         android:layout_below="@id/toolbar_editNote"
         android:paddingTop="20dp"
@@ -52,7 +53,7 @@
         android:gravity="top|left"
         android:padding="16dp"
         android:textColor="@color/white"
-        android:fontFamily="@font/ubuntu_regular"
+        android:fontFamily="sans-serif"
         android:textSize="16sp"
         tools:ignore="RtlHardcoded"
         android:background="@null" />
